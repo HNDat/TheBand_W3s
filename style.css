@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+html{
+    font-family: segoe ui;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+#head{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+/* .menu{
+    position: fixed;
+} */
+.nav{
+    text-transform: uppercase;
+    display: flex;
+}
+.nav li{
+    /* display: inline-block;  */
+    position: relative;   
+}
+.menu{
+    position: relative;
+    display: flex;
+}
+#head .sb{
+    color: #fff;
+    line-height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0 21px;
+    position: absolute;
+    right: 0;
+}
+/* #head .select{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0 21px;
+   
+} */
+#head .sb:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+/* .nav .menu2 li:hover a */
+.nav li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+.nav > li > a{
+    color: #fff;
+}
+.nav li a{
+    color: white;
+    display: flex;
+    line-height: 46px;
+    padding: 0 24px ;
+    font-size: 15px;
+}
+.nav .menu2{
+    text-transform: none;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+}
+.nav .menu2 a{
+    display: block;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    /* margin-left: -4px; */
+}
+.nav2 li{
+    display: block; 
+    width: 150px;
+}
+#slide{
+    padding-top: 50%;
+    background: url('./img/chicago.jpg') top center / cover;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+    position: relative;
+}
+#slide .text{
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+#slide .tt{
+    padding-bottom: 18px;
+    font-weight: 400;
+}
+#slide .tb{
+    font-weight: 700;
+    font-size: 15px;
+}
+.menu2:hover{
+    display: block;
+}
+.nav li:hover .menu2{
+    display: block;
+}
+.menu .nav1{
+    font-size: 12px;
+}
+.toura{
+    background-color: #000;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+#content {
+
+}
+#content .text-con{
+    width: 800px;
+    max-width: calc(100%-32px);
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .headd{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 74px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 20px; */
+    letter-spacing: 4px;
+    /* padding: 30px 0; */
+}
+#content .bodyy{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-weight: 400;
+    margin: 15px 0;
+    /* padding-bottom: 50px; */
+    /* padding-bottom: 30px; */
+}
+#content .nd{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 70px;
+}
+#content .list{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    /* margin-bottom: 50px; */
+}
+#content .lista{
+    width: 33.33%;
+    
+}
+#content .list img{
+    margin-top: 15px;
+    border-radius: 4px;
+    width: 154px;
+}
+.tw{
+    color: #fff;
+}
+#content .toura .headd{
+    padding-top: 50px;
+    margin-top: 0;
+}
+#content .toura .bodyy{
+    padding-bottom: 40px;
+}
+.ve{
+    color: rgb(133, 127, 127);
+    background-color: #fff;
+    margin-bottom: 30px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* padding-bottom: 50px; */
+}
+.ve li{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    /* display: block; */
+    border-bottom: 1px solid #ccc;
+}
+.ve .su{
+    background-color: #f44336;
+    color: #fff;
+    margin: 0 20px;
+    padding: 0 4px;
+}
+.ve .so{
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    color: #fff;
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    text-align: center;
+    line-height: 24px;
+    margin: 8px 15px 0;
+}
+.place{
+    display: flex; 
+    font-size: 15px;
+    color: #000;
+    justify-content: space-between;
+    overflow: hidden;  
+    padding-bottom: 80px;
+}
+.place .placea{
+    width: 32%;
+    height: 408px;
+    background-color: #000;
+    /* padding: 0 10px; */
+    overflow: hidden;
+    object-fit: cover;
+}
+.place .he{
+    padding: 10px 0;
+}
+.place .bo{
+    padding: 10px 0;
+    font-weight: 300;
+    /* color: rgb(118, 112, 112); */
+    opacity: 0.6;
+}
+.place .ps{
+    padding-left: 10px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.place .ft{
+    padding: 10px 0;
+}
+.place .placea .buy{
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 16px;
+    margin-top: 10px;
+}
+.imagep{
+    /* transition: 0.5s; */
+    /* transition: transform .7s,-webkit-transform .7s,-moz-transform .7s; */
+    vertical-align: middle;
+}
+.imagep:hover{
+    /* transform: scale(1.05); */
+    /* transition: all ease-in-out 0.5s; */
+    /* object-fit: cover; */
+    opacity: 0.6;
+}
+.oleft .send:hover,
+.ps .buy:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+img{
+    vertical-align: middle;
+}
+.other{
+    /* background-color: #ccc; */
+    /* text-align: center; */
+    font-size: 17px;
+    font-weight: 450;
+    display: flex;
+    position: relative;
+}
+.other i{
+    padding-right: 10px;
+}
+.ab{width: 25px;
+}
+.other p{
+    display: inline;
+}
+.other li{
+    margin: 8px 0;
+}
+.oright{
+    width: 50%;
+}
+.oleft{
+    margin-top: 10px;
+    /* border: 1px solid #ccc; */
+    width: 50%;
+    /* padding: 100px; */
+}
+.oleft .lefttop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.Name, .Email, .Message{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.oleft .leftbot .Message{
+    width: 100%;
+}
+.oleft .send{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+}
+#footer{
+    padding-top: 55%;
+    background: url('./img/map.jpg') top center / cover;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+    /* position: relative; */
+
+}
+.space{
+    margin-bottom: 150px;
+}
+#des{
+    margin: 70px 0;
+    opacity: 0.6;
+    text-align: center;
+}
+#des .mxh{
+    font-size: 25px;
+}
+.desb{
+    margin: 30px 0;
+    
+}
+.desb a{
+    text-decoration: underline;
+    color: #000;
+}
+.mxh i:hover{
+    opacity: 0.6;
+}
+.desba{
+    
+}
